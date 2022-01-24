@@ -60,8 +60,37 @@ section#scacchiera div:hover{
 }
 /*fine pseudo classi*/
 /* + selettore di fratelli adiacenti e successori */
-div + div {
+#scacchiera div + div {
     background-color: mediumpurple;
+}
+
+/* pseudo classi strutturali */
+#scacchiera1 div {
+    display: inline-block;
+    width: 12%;
+    height: 120px;
+} 
+#scacchiera1 div:nth-child(odd) div:nth-child(odd) {
+    background-color: black;
+}
+#scacchiera1 div:nth-child(even) div:nth-child(even) {
+    background-color: black;
+}
+
+#strisce-pedonali div {
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+}
+#strisce-pedonali div:first-child,
+#strisce-pedonali div:last-child {
+    background-color: red;
+}
+#strisce-pedonali div:nth-child(even) {
+    background-color: black;
+}
+#strisce-pedonali div:empty {
+    border: 3px solid orange;
 }
 /*selettori di attributo*/
 input[type="text"], input[type="email"]{
