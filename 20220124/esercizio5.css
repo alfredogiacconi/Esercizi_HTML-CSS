@@ -1,0 +1,85 @@
+/* 1 parte
+creare una pagina html con un menù di 6 elementi
+disporre i menù in verticale su smartphone e in orizzontale su notebook >=992px
+
+impostare un reset al css dello user agent
+
+impostare un effetto di background-color all'hover di ogni etichetta di menù
+
+2 parte
+inserire una section per un form con 3 checkbox e 1 input email (con le varie label)
+
+colorare e "ingrandire" a 1.5 il font delle label delle checkbox (selettore di fratelli)
+*/
+nav a:hover {
+    background-color: coral;
+}
+
+li {
+    padding: 0px 12px;
+}
+
+input[type="checkbox"] + label {
+    font-size: 1.5em;
+    color: crimson;
+}
+
+/* creare un layout in cui inserire:
+un h1 grande per tutto il viewport
+1 section news
+4 article con un testo all'interno che si devono disporre:
+1 per riga fino a 575px
+>576px 2 per riga
+>992px 3 per riga
+>1200px 4 per riga
+inseriamo un margin-left: 1% su ogni article
+
+aggiungere un bordo ad ogni article
+
+aggiungere un padding 10px ad ogni article
+
+visionare il comportamento utilizzando il box sizing border-box */
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#news article {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 1px;
+}
+
+
+@media screen and (min-width: 576px) {
+    article {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav li {
+        display: inline ;
+    }
+    article {
+        width: 32%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    article {
+        width: 24%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+}
