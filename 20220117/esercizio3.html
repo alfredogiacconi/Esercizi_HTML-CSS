@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="../lezione3/lezione3.html" target="_blank">lezione 3</a></li>
+            <li><a href="https://google.it" target="_blank">google</a></li>
+        </ul>
+    </nav>
+
+    <h2>Form</h2>
+    <br>
+    <form action="salva" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div>
+                <label for="nome-di-battesimo">NOME DI BATTESIMO <span style="color: red;">*</span></label>
+                <input type="text" name="nome-di-battesimo" id="nome-di-battesimo" required autofocus>
+            </div>
+           <br>
+            <div>
+                <label for="cognome">COGNOME<span style="color: red;">*</span></label>
+                <input type="text" name="cognome" id="cognome" required>
+            </div>
+            <br>
+            <div>
+                <label for="azienda">AZIENDA<span style="color: red;">*</span></label>
+                <input type="text" name="azienda" id="azienda" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">EMAIL<span style="color: red;">*</span></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="tel">NUMERO DI TELEFONO<span style="color: red;">*</span></label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>  
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <legend>PREFERENZA SUL CIBO</legend>
+                <br>
+                <select name="preferenza-sul-cibo" id="preferenza-sul-cibo">
+                    <option value="vegetariano">Vegetariano</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <legend>METODO DI PAGAMENTO</legend>
+                <br>
+                <input type="radio" name="contanti" id="contanti" checked value="1">
+                <label for="contanti">Contanti</label>
+                <input type="radio" name="dai-un-occhiata" id="dai-un-occhiata">
+                <label for="dai-un-occhiata">Dai un'occhiata</label>
+                <input type="radio" name="demand-draf" id="demand-draf">
+                <label for="demand-draf">Demand Draf</label>
+            </div>
+            <br>
+            <div>
+                <label for="numero-assegno">DD/ASSEGNO N.</label>
+                <input type="text" name="numero-assegno" id="numero-assegno">
+            </div>
+            <br>
+            <div>
+                <label for="nome-banca">DISEGNATO SU(NOME BANCA)</label>
+                <input type="text" name="nome-banca" id="nome-banca">
+            </div>
+            <br>
+            <div>
+                <label for="beneficiario">PAGABILE A</label>
+                <input type="text" name="beneficiario" id="beneficiario">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <label for="donazione">DONACI</label>
+                <input type="range" name="donazione" id="donazione" min="10" max="1000" step="10" value="500">
+            </div>
+        </fieldset>
+        <br>
+        <input type="submit" value="invia">
+        <input type="reset" value="reset">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio 2</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="../lezione1/lezione1.html" target="_blank"> lezione 1</a></li>
+                <li><a href="./lezione2.html" target="_blank">lezione 2</a></li>
+                <li><a href="https://google.it" target="_blank">google</a></li>
+            </ul>
+        </nav>
+        
+        <table border="1.5" style="width: 350px;">
+        <caption>tabella1</caption>
+        <colgroup>
+            <col style="background-color: gainsboro;">
+        </colgroup>
+        <thead style="background-color: gainsboro;">
+            <th></th>
+            <th>Colonna 1</th>
+            <th>Colonna 2</th>
+            <th>Colonna 3</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>riga1</th>
+                <td>a</td>
+                <td>s</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <th>riga2</th>
+                <td>z</td>
+                <td>x</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <th>riga3</th>
+                <td>q</td>
+                <td>w</td>
+                <td>e</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>TOTALE</th>
+                <td>R</td>
+                <td>T</td>
+                <td>Y</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table border="1">
+        <caption>Una tabella esemplificativa con celle unificate</caption>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Media</th>
+                <th rowspan="2">Occhi rossi</th>
+            </tr>
+            <tr>
+                <th>Altezza</th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Maschi</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Femmine</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+        scaricare 4 immagini dal web di dimensioni massime 150x150
+        posizionarle rispettivamente dentro:
+        1. la cartella corrente in sotto-cartella images
+        2. cartella superiore (rispetto alla cartella corrente)
+        3. cartella c:\ in cartella images
+        4. cartella corrente
+        inserire nella pagina html le 4 immagini prendendole dal path corretto
+     -->
+     <ol>
+        <li><img src="./images/img.jpg" alt=""></li>
+        <li><img src="../img.jpg" alt=""></li>
+        <li><img src="/images/img.jpg" alt=""></li>
+        <li><img src="./img.jpg" alt=""></li>
+    </ol>
+</body>
+</html>
