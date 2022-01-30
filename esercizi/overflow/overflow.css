@@ -1,0 +1,29 @@
+/* creare:
+5 section con all'interno un testo lungo
+limitare la width 500px e height 150px alle 5 section
+assegnare un colore ed un bordo ad ogni section
+applicare l'overflow auto alla prima, 
+overflow hidden alla seconda, 
+overflow scroll alla terza, 
+overflow-x scroll e overflow-y: hidden alla quarta, 
+overflow visible alla quinta */
+div {
+    width: 500px;
+    height: 150px;
+    background-color: lightskyblue;
+    border: 1px solid blueviolet;
+    margin: 1px;
+}
+section:nth-child(1) div {
+    overflow: auto;
+}
+section:nth-child(2) div {
+    overflow: hidden;
+}
+section:nth-child(3) div {
+    overflow: scroll;
+}
+section:nth-child(4) div {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

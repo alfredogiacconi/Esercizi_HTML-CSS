@@ -1,0 +1,11 @@
+.maxw100 {
+    max-width: 100%;
+    /* l'immagine mantiene la sua dimensione originale e non sgrana */
+}
+.w100 {
+    width: 100%;
+    /* l'immagine si espande per tutta la larghezza del box che la contiene */
+}
+img {
+    height: auto;
+}
