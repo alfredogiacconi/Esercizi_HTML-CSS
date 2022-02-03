@@ -1,0 +1,10 @@
+section {
+    background-color: lightgreen;
+    margin-bottom: 1em;
+}
+p {
+    padding: 1em;
+    background-color: lightblue;
+    margin: 15px 10%;
+    border: 3px dotted black;
+}

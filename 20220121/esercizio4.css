@@ -15,7 +15,7 @@ li.li1, li.li4, ul.li2, div.li3 {
 }
 
 
- @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
     h.sfondo-arancio {
         background-color: #e1bee7;        ;
     }     
