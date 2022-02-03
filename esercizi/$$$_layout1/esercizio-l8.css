@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+#logo img {
+    max-width: 250px;
+    display: block;
+    margin: 0% auto;
+    padding: 1em;
+}
+#menu ul {
+    background-color: orange;
+    text-align: center;
+    padding: 15px;
+}
+#menu li {
+    display: inline-block;
+    margin: 0 2px;
+}
+#menu a {
+    color: black;
+}
+#chi-siamo {
+    display: block;
+    margin: 0 10%;
+    padding: 20px;
+}
+#box > div  {
+    display: inline-block;
+    margin: 0 auto;
+    width: 48%;
+    vertical-align: top;
+    padding: 10px;
+}
+div#box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+article h2, p {
+    margin: 5px 0;
+    padding: 10px 0;
+}
+#mission h2 {
+    text-align: center;
+    min-height: 200px;
+} 
+
+
+@media screen and (max-width:768px) {
+    #menu li {
+        display: block;
+    }
+    #chi-siamo {
+        display: block;
+        margin: 0 5%;
+        padding: 10px;
+    }
+    #box > div  {
+        display: inline-block;
+        margin: 0 auto;
+        width: 99%;
+        vertical-align: top;
+    }
+    #mission {
+        text-align: center;
+        min-height: 200px;
+    }
+}
