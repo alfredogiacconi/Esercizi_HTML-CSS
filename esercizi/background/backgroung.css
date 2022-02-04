@@ -1,0 +1,19 @@
+body {
+    background-image: url(icon.svg);
+    background-size: .7em;
+}
+section {
+    width: 80%;
+    min-height: 40%;
+    margin: 5% auto;
+    padding: 5%;
+}
+.bg {
+    background-color: rgba(255, 255, 255, 0.493);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: .5em;
+    }
+}

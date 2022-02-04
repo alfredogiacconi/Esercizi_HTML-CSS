@@ -1,0 +1,15 @@
+.fletx2::first-letter {
+    font-size: 2em;
+}
+.fline-bold::first-line {
+    font-weight: bold;
+}
+p[class="fline-bold"] {
+    max-width: 50%;
+}
+section p {
+    max-width: 80%;
+}
+p::before {
+    content: "-";
+}
