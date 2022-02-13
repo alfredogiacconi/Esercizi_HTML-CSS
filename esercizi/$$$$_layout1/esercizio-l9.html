@@ -1,0 +1,105 @@
+<!-- 
+    creare 2 file esercizio-l9.html e eserciziol9.css 
+ - dovremo gestire sia il layout mobile che desktop
+ - logo centrato
+ - menu (orizzontale su desktop e verticale su mobile)
+ - sezione servizi width:80% centrato su desktop e 90% centrato su mobile
+    - 3 icone e sotto ogni icona del testo (font awesome)
+    le icone su desktop saranno in orizzontale 33%
+    le icone su mobile saranno in verticale
+ - sezione claim con la mission e una immagine di background height 200px e con effetto "pellicola" bianco, 
+    il titolo sovrastante "Comunicare è fondamentale" colore #333
+ - sezione news  width:80% centrato su desktop e 90% centrato su mobile
+    news 1 con h2 e testo occupa il 70% della riga e ha un layout multicolonna con 2 colonne su desktop e 1 colonna su mobile
+    news 2 con h2 e testo occupa il 30% della riga
+ - 4 immagini con bordo arrotondato 3px si dispongono in orizzontale su desktop 25% e verticale su mobile 50%
+ - footer #333 con colore carattere bianco e scritto "Copyright ***** 2021"
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio l9</title>
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="./esercizio-l9.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <img src="./logo.png" alt="" id="logo">
+    <menu>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dove siamo</a></li>
+                <li><a href="#">Chi siamo</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
+    </menu>
+    <section id="servizi" class="container">
+        <div class="servizio">
+            <i class="fab fa-amazon-pay fa-4x"></i>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="servizio">
+            <i class="fab fa-apple-pay fa-4x"></i>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="servizio">
+            <i class="fab fa-google-pay fa-4x"></i>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+    </section>
+    <section id="claim">
+        <div class="patina">
+            <h2>Comunicare è fondamentale</h2>
+        </div>
+    </section>
+    <section id="news" class="container">
+        <article>
+            <h3>Titolo articolo 1</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.</p>
+        </article>
+        <article>
+            <h3>Titolo articolo 2</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.</p>
+        </article>
+    </section>
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div>
+            <img src="./sfondo.jpg" alt="">
+            <img src="./sfondo.jpg" alt="">
+            <img src="./sfondo.jpg" alt="">
+            <img src="./sfondo.jpg" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>Copyright Alfredo 2022</p>
+    </footer>
+</body>
+
+</html>
